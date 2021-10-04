@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Run Form</title>
+    </head>
+    <body>
+        <h1>Formulário de Registro da Corrida</h1>
+        <form action="/textt">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+
+            </br>
+            <div>Sexo:</div>
+            <label for="fem"><input type="radio" name="sexo" id="fem">Feminino</label>
+            <label for="masc"><input type="radio" name="sexo" id="masc">Masculino</label>
+
+            </br>
+            Email <input type="email" name="email" id="email" required>
+            Password <input type="password" name="password" id="password" minlength="8" maxlength="25" required>    
+
+            </br>
+            Selecione seu grupo de idade:
+            <select name="age" id="age">
+                <option value="under 18">Under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+
+            <div>
+                Qual corrida irá participar:
+                <input type="radio" name="run" id="five" value="5"><label for="five">5km</label>
+                <input type="radio" name="run" id="ten" value="10"><label for="ten">10km</label>
+                <input type="radio" name="run" id="tone" value="21"><label for="tone">Meia Maratona</label>
+                <input type="radio" name="run" id="ftwo" value="42"><label for="ftwo">Maratona</label>
+            </div>
+            
+            <textarea name="obs" id="obs" cols="30" rows="5" placeholder="Alguma Observação"></textarea>
+
+            </br>
+            <input type="checkbox" name="acept" id="acept">
+            <label for="acept">Eu concordo com todos os termos da corrida</label>    
+            </br>
+            <input type="submit" name="submit" id="submit" value="Registrar!">
+        </form>
+        
+    </body>
+</html>
